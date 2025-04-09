@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model X | Tesla</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">TESLA</a>
+            </div>
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li id="vehicles-menu">
+                        <a href="../../viharika work/vehicle/vehicle.html" >Vehicles</a> 
+                     </li>
+                     <li> <a href="../../viharika work/energy/energy.html" >Energy </a></li>
+                     <li> <a href="../../viharika work/charging/charging.html" > Charging </a></li>
+                     <li> <a href="../../viharika work/Discover/discover.html">Discover</a></li>
+                     <li><a href="../../viharika work/shop/shop.html">Shop</a></li>
+                     <li> <a href="../../index.html">Home</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#" id="menu-btn">Menu</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+            <li><a href="../../viharika work/vehicle/vehicle.html" >Vehicles</a> </li>
+            <li> <a href="../../viharika work/energy/energy.html" >Energy </a></li>
+            <li> <a href="../../viharika work/charging/charging.html" > Charging </a></li>
+            <li> <a href="../../viharika work/Discover/discover.html">Discover</a></li>
+            <li><a href="../../viharika work/shop/shop.html">Shop</a></li>
+            <li> <a href="../../index.html">Home</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-content">
+            <h1>Model X</h1>
+            <p class="tagline">From $68,590*</p>
+            <p class="subtitle">After Federal Tax Credit & Est. Gas Savings</p>
+        </div>
+        <div class="cta-buttons">
+            <a href="#" class="btn btn-primary order-btn">Order Now</a>
+            <a href="#" class="btn btn-secondary demo-btn">Demo Drive</a>
+        </div>
+        <div class="scroll-indicator">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 9L12 15L18 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Interior Section -->
+    <section class="feature-section" id="interior">
+        <div class="feature-content">
+            <h2>Interior of the Future</h2>
+            <p>A spacious cabin with the world's largest panoramic windshield and seating for up to seven.</p>
+            <a href="#" class="text-link learn-more-btn" data-section="interior">Learn More</a>
+        </div>
+        <div class="feature-image">
+            <!-- Placeholder for image -->
+        </div>
+    </section>
+
+    <!-- Performance Section -->
+    <section class="feature-section reverse" id="performance">
+        <div class="feature-content">
+            <h2>Unmatched Performance</h2>
+            <p>The highest performing SUV ever built, with 0-60 mph acceleration in as little as 2.5 seconds.</p>
+            <a href="#" class="text-link learn-more-btn" data-section="performance">Learn More</a>
+        </div>
+        <div class="feature-image">
+            <!-- Placeholder for image -->
+        </div>
+    </section>
+
+    <!-- Specs Section -->
+    <section class="specs-section" id="specs">
+        <h2>Model X Specs</h2>
+        <div class="specs-grid">
+            <div class="spec-item">
+                <div class="spec-value">348 mi</div>
+                <div class="spec-label">Range (EPA est.)</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-value">2.5 s</div>
+                <div class="spec-label">0-60 mph</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-value">9.9 s</div>
+                <div class="spec-label">1/4 Mile</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-value">1,020 hp</div>
+                <div class="spec-label">Peak Power</div>
+            </div>
+        </div>
+        <div class="specs-cta">
+            <a href="#" class="btn btn-primary order-btn">Order Now</a>
+            <a href="#" class="btn btn-secondary compare-btn">Compare Models</a>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section class="order-section" id="order">
+        <div class="order-content">
+            <h2>Experience Model X</h2>
+            <p>Schedule a demo drive today and experience the future of automotive technology.</p>
+            <div class="order-cta">
+                <a href="#" class="btn btn-primary order-btn">Order Now</a>
+                <a href="#" class="btn btn-secondary demo-btn">Demo Drive</a>
+            </div>
+        </div>
+        <footer>
+            <p>© 2025 Tesla, Inc.</p>
+        </footer>
+    </section>
+
+    <!-- Order Modal -->
+    <div class="modal" id="order-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Order Your Model X</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="model-options">
+                    <h3>Select Your Model X</h3>
+                    <div class="option-cards">
+                        <div class="option-card active" data-price="68590">
+                            <h4>Model X</h4>
+                            <ul>
+                                <li>348 mi Range (EPA est.)</li>
+                                <li>3.8 sec 0-60 mph</li>
+                                <li>5 Seating</li>
+                            </ul>
+                            <div class="option-price">$68,590*</div>
+                        </div>
+                        <div class="option-card" data-price="89590">
+                            <h4>Model X Plaid</h4>
+                            <ul>
+                                <li>333 mi Range (EPA est.)</li>
+                                <li>2.5 sec 0-60 mph</li>
+                                <li>5 Seating</li>
+                            </ul>
+                            <div class="option-price">$89,590*</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="color-options">
+                    <h3>Paint Color</h3>
+                    <div class="color-selector">
+                        <div class="color-option active" style="background-color: #fff;" data-color="Pearl White Multi-Coat" data-price="0"></div>
+                        <div class="color-option" style="background-color: #000;" data-color="Solid Black" data-price="1500"></div>
+                        <div class="color-option" style="background-color: #2f4f4f;" data-color="Stealth Grey" data-price="1500"></div>
+                        <div class="color-option" style="background-color: #0000ff;" data-color="Deep Blue Metallic" data-price="1500"></div>
+                        <div class="color-option" style="background-color: #ff0000;" data-color="Red Multi-Coat" data-price="2500"></div>
+                    </div>
+                    <div class="selected-color">Pearl White Multi-Coat - Included</div>
+                </div>
+                
+                <div class="wheel-options">
+                    <h3>Wheels</h3>
+                    <div class="option-cards">
+                        <div class="option-card active" data-price="0">
+                            <div class="wheel-image">
+                                <img src="21Arachnid.avif" alt="">
+                                <div class="wheel-placeholder">20" Wheels</div>
+                            </div>
+                            <h4>20" Cyberstream Wheels</h4>
+                            <div class="option-price">Included</div>
+                        </div>
+                        <div class="option-card" data-price="2000">
+                            <div class="wheel-image">
+                                <img src="wheels.avif" alt="">
+                                <div class="wheel-placeholder">22" Wheels</div>
+                            </div>
+                            <h4>22" Turbine Wheels</h4>
+                            <div class="option-price">$2,000</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="interior-options">
+                    <h3>Interior</h3>
+                    <div class="option-cards">
+                        <div class="option-card active" data-price="0">
+                            <div class="interior-image">
+                                <img src="Interior_Black.avif" alt="">
+                                <div class="interior-placeholder">Black</div>
+                            </div>
+                            <h4>All Black</h4>
+                            <div class="option-price">Included</div>
+                        </div>
+                        <div class="option-card" data-price="2000">
+                            <div class="interior-image">
+                                <img src="Interior_White.avif" alt="">
+                                <div class="interior-placeholder">White</div>
+                            </div>
+                            <h4>Black and White</h4>
+                            <div class="option-price">$2,000</div>
+                        </div>
+                        <div class="option-card" data-price="2000">
+                            <div class="interior-image">
+                                <img src="Interior_Cream.avif" alt="">
+                                <div class="interior-placeholder">Cream</div>
+                            </div>
+                            <h4>Cream</h4>
+                            <div class="option-price">$2,000</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-summary">
+                    <h3>Summary</h3>
+                    <div class="summary-item">
+                        <span>Model X</span>
+                        <span>$68,590</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Paint</span>
+                        <span>Included</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Wheels</span>
+                        <span>Included</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Interior</span>
+                        <span>Included</span>
+                    </div>
+                    <div class="summary-total">
+                        <span>Total</span>
+                        <span id="total-price">$68,590</span>
+                    </div>
+                    <p class="summary-note">*Price before incentives and savings</p>
+                </div>
+                
+                <div class="order-form">
+                    <h3>Your Information</h3>
+                    <form id="order-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="zip">Zip Code</label>
+                            <input type="text" id="zip" name="zip" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Continue to Payment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Demo Drive Modal -->
+    <div class="modal" id="demo-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Schedule a Demo Drive</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="demo-form">
+                    <form id="demo-form">
+                        <div class="form-group">
+                            <label for="demo-name">Full Name</label>
+                            <input type="text" id="demo-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-email">Email</label>
+                            <input type="email" id="demo-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-phone">Phone</label>
+                            <input type="tel" id="demo-phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-zip">Zip Code</label>
+                            <input type="text" id="demo-zip" name="zip" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-date">Preferred Date</label>
+                            <input type="date" id="demo-date" name="date" required min="">
+                        </div>
+                        <div class="form-group">
+                            <label for="demo-time">Preferred Time</label>
+                            <select id="demo-time" name="time" required>
+                                <option value="">Select a time</option>
+                                <option value="morning">Morning (9am - 12pm)</option>
+                                <option value="afternoon">Afternoon (12pm - 4pm)</option>
+                                <option value="evening">Evening (4pm - 7pm)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Schedule Demo Drive</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compare Models Modal -->
+    <div class="modal" id="compare-modal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2>Compare Models</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="compare-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Model X</th>
+                                <th>Model X Plaid</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Price</td>
+                                <td>$68,590*</td>
+                                <td>$89,590*</td>
+                            </tr>
+                            <tr>
+                                <td>Range (EPA est.)</td>
+                                <td>348 mi</td>
+                                <td>333 mi</td>
+                            </tr>
+                            <tr>
+                                <td>0-60 mph</td>
+                                <td>3.8 sec</td>
+                                <td>2.5 sec</td>
+                            </tr>
+                            <tr>
+                                <td>Top Speed</td>
+                                <td>155 mph</td>
+                                <td>175 mph</td>
+                            </tr>
+                            <tr>
+                                <td>Peak Power</td>
+                                <td>670 hp</td>
+                                <td>1,020 hp</td>
+                            </tr>
+                            <tr>
+                                <td>Wheels</td>
+                                <td>20" or 22"</td>
+                                <td>20" or 22"</td>
+                            </tr>
+                            <tr>
+                                <td>Seating</td>
+                                <td>Up to 7</td>
+                                <td>Up to 6</td>
+                            </tr>
+                            <tr>
+                                <td>Cargo</td>
+                                <td>88 cu ft</td>
+                                <td>88 cu ft</td>
+                            </tr>
+                            <tr>
+                                <td>Displays</td>
+                                <td>17" Center Display</td>
+                                <td>17" Center Display</td>
+                            </tr>
+                            <tr>
+                                <td>Supercharging</td>
+                                <td>250 kW Max</td>
+                                <td>250 kW Max</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="compare-cta">
+                    <a href="#" class="btn btn-primary order-btn">Order Model X</a>
+                    <a href="#" class="btn btn-primary order-plaid-btn">Order Model X Plaid</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature Details Modal -->
+    <div class="modal" id="feature-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="feature-modal-title">Feature Details</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <!-- Interior Details -->
+                <div class="feature-details" id="interior-details">
+                    <div class="feature-image-large">
+                        <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Model-X-Interior-Hero-Desktop-LHD" alt="Model X Interior">
+                    </div>
+                    <div class="feature-description">
+                        <h3>A Spacious Interior Built for Every Passenger</h3>
+                        <p>Model X offers a spacious cabin with the world's largest panoramic windshield and seating for up to seven. Front doors open and close automatically, with Falcon Wing rear doors that make loading passengers and cargo easier than ever.</p>
+                        <ul>
+                            <li>17" cinematic display with 2200 x 1300 resolution</li>
+                            <li>Tri-zone temperature controls</li>
+                            <li>HEPA air filtration system</li>
+                            <li>Up to 88 cubic feet of cargo space</li>
+                            <li>Premium audio system with 22 speakers</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Performance Details -->
+                <div class="feature-details" id="performance-details">
+                    <div class="feature-image-large">
+                        <img src="https://digitalassets.tesla.com/tesla-contents/image/upload/h_1620,w_2880,c_fit,f_auto,q_auto:best/Model-X-Performance-Hero-Desktop-LHD" alt="Model X Performance">
+                    </div>
+                    <div class="feature-description">
+                        <h3>Unmatched Performance</h3>
+                        <p>Model X Plaid is the highest performing SUV ever built, with 1,020 horsepower generated by three high-performance motors with carbon-sleeved rotors.</p>
+                        <ul>
+                            <li>0-60 mph in 2.5 seconds</li>
+                            <li>1,020 horsepower</li>
+                            <li>9.9 seconds quarter mile</li>
+                            <li>175 mph top speed</li>
+                            <li>Tri Motor All-Wheel Drive</li>
+                            <li>Torque vectoring during cornering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="success-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="success-title">Thank You!</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="success-message">
+                    <div class="success-icon">✓</div>
+                    <p id="success-message">Your request has been submitted successfully.</p>
+                    <button class="btn btn-primary close-success">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Details Form</title>
+    <link rel="stylesheet" href="orderwithcard.css">
+</head>
+<body>
+    <div class="container">
+        <form id="accountForm">
+            <h2>Enter Account Details</h2>
+            
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="confirmEmail">Confirm Email Address</label>
+                <input type="email" id="confirmEmail" class="form-control" required>
+            </div>
+            
+            <div class="form-note">
+                <p>Your email won't be used in any way.</p>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Mobile Phone Number</label>
+                <div class="phone-input">
+                    <div class="country-code">
+                        <select id="countryCode">
+                            <option value="+1">US +1</option>
+                            <option value="+44">UK +44</option>
+                            <option value="+61">AU +61</option>
+                            <option value="+33">FR +33</option>
+                        </select>
+                    </div>
+                    <input type="tel" id="phone" class="form-control" placeholder="(555) 555-0123" required>
+                </div>
+            </div>
+            
+            <div class="form-note">
+                <p>By entering your phone number, you consent to receive text messages regarding order status and updates. <a href="#">More information</a> regarding other future promotions, services and events. I can opt out at any time. This is not a purchase requirement.</p>
+            </div>
+            
+            <h3>Shipping</h3>
+            <div class="form-note">
+                <p>Shipping merchandise will be sent to this address</p>
+            </div>
+            
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" class="form-control" placeholder="Enter shipping address" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="apartment">Apartment, Suite, etc (optional)</label>
+                <input type="text" id="apartment" class="form-control">
+            </div>
+            
+            <h3>Card</h3>
+            <div class="form-group">
+                <label for="nameOnCard">Name on Card</label>
+                <input type="text" id="nameOnCard" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" class="form-control" required>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group half">
+                    <label for="expirationMonth">Expiration Month</label>
+                    <select id="expirationMonth" class="form-control" required>
+                        <option value="" disabled selected>Select Month</option>
+                        <option value="01">01 - January</option>
+                        <option value="02">02 - February</option>
+                        <option value="03">03 - March</option>
+                        <option value="04">04 - April</option>
+                        <option value="05">05 - May</option>
+                        <option value="06">06 - June</option>
+                        <option value="07">07 - July</option>
+                        <option value="08">08 - August</option>
+                        <option value="09">09 - September</option>
+                        <option value="10">10 - October</option>
+                        <option value="11">11 - November</option>
+                        <option value="12">12 - December</option>
+                    </select>
+                </div>
+                
+                <div class="form-group half">
+                    <label for="expirationYear">Expiration Year</label>
+                    <select id="expirationYear" class="form-control" required>
+                        <option value="" disabled selected>Select Year</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="securityCode">Security Code</label>
+                <input type="text" id="securityCode" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="billingZip">Billing ZIP Code</label>
+                <input type="text" id="billingZip" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="deliveryZip">Delivery ZIP</label>
+                <input type="text" id="deliveryZip" class="form-control" placeholder="Enter Delivery ZIP" required>
+            </div>
+            <div class="container">
+                <div class="payment-summary">
+                    <div class="summary-header">
+                        <h2>Due Today</h2>
+                        <span class="price">$250</span>
+                    </div>
+                    <p class="fee-description">Non-refundable Order Fee</p>
+                    
+                    <div class="divider"></div>
+                    
+                    <p class="terms-text">
+                        By placing this order, I agree to the 
+                        <a href="#" class="terms-link">Model Y Order Agreement</a>, 
+                        <a href="#" class="terms-link">Terms of Use</a>, and 
+                        <a href="#" class="terms-link">Privacy Notice</a>.
+                    </p>
+                    
+                    <a href="#" class="additional-info" id="viewMoreInfo">View additional information</a>
+                    
+                    <div class="additional-content" id="additionalContent">
+                        <p>This order requires a non-refundable fee of $250 which will be applied to your final payment. Delivery timing may vary based on your configuration and location.</p>
+                    </div>
+                    
+                    <button class="place-order-btn" id="placeOrderBtn">Place Order</button>
+                </div>
+            </div>
+            <!-- <div class="form-group">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div> -->
+        </form>
+    </div>
+    <script src="oredrwithcard.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Model Y Gallery</title>
+    <link rel="stylesheet" href="ordernowX.css">
+    <style>
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">TESLA</div>
+            <div class="language-selector">US</div>
+        </header>
+        <div class="main">
+            <div class="gallery-container">
+                <div class="nav-buttons">
+                    <button class="nav-button prev" id="prevBtn">←</button>
+                    <button class="nav-button next" id="nextBtn">→</button>
+                </div>
+                <div class="gallery-wrapper" id="galleryWrapper">
+                    <div class="gallery" id="gallery">
+                        <div class="gallery-item">
+                            <img src="compositor.jpeg" alt="Tesla Model Y Front View">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="compositor (1).jpeg" alt="Tesla Model Y Side View">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="compositor (2).jpeg" alt="Tesla Model Y Rear View">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="compositor (3).jpeg" alt="Tesla Model Y Interior">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="compositor (4).jpeg" alt="Tesla Model Y Wheels">
+                        </div>
+                        <!-- <div class="gallery-item">
+                            <img src="compositor (5).jpeg" alt="Tesla Model Y Wheels">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <!-- <div class="specs-container">
+                    <div class="spec-item">
+                        <div class="spec-value">327 mi</div>
+                        <div class="spec-label">Range (EPA est.)</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-value">125 mph</div>
+                        <div class="spec-label">Top Speed</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-value">4.1 sec</div>
+                        <div class="spec-label">0-60 mph</div>
+                    </div>
+                </div> -->
+                
+                <!-- <div class="payment-options">
+                    <div class="payment-option">Cash</div>
+                    <div class="payment-option">Lease</div>
+                    <div class="payment-option active">Finance</div>
+                </div> -->
+                
+                <div class="pricing">
+                    <div class="model-card">
+                        <div class="model-header">
+                            <div>
+                                <div class="model-name"> Model X</div>
+                                <div class="model-range">Long Range All-Wheel Drive</div>
+                            </div>
+                            <div class="model-price">$1,149 /mo</div>
+                        </div>
+        
+                        <div class="launch-series">LAUNCH<br><span class="series-text">SERIES</span></div>
+        
+                        <div class="model-description">
+                            Limited release. Reimagined exterior design. Refined interior. Fully loaded with Full Self-Driving (Supervised). <span class="learn-more">Learn More</span>
+                        </div>
+                    </div>
+                    
+                    <div class="finance-details">
+                        <div class="finance-amount">$3,999 (6%) down, 5.49% APR, 72 months</div>
+                    </div>
+        
+                    <div class="checkbox-container">
+                        <div class="custom-checkbox checked" id="taxCreditCheckbox"></div>
+                        <div class="checkbox-label">Include $7,500 Federal Tax credit</div>
+                    </div>
+        
+                    <div class="checkbox-container">
+                        <div class="custom-checkbox" id="gasSavingsCheckbox"></div>
+                        <div class="checkbox-label">Include est. gas savings of $100 /mo</div>
+                    </div>
+
+                    <div class="charging">
+                        <h1>Charging</h1>
+                        <span class="spa">Every Tesla includes access to the largest global Supercharging network</span>
+        
+                        <div class="charger-container">
+                            <div class="price">$420</div>
+                            <div class="product-name">Home Charger</div>
+                            <div class="specs">Up to 44 mi range per hour, professional installation required</div>
+                            
+                            <div class="charger-image">
+                                <img src="../../viharika work/charging/Images/Home-Charging.avif" alt="Tesla Home Charger">
+                            </div>
+                            
+                            <div class="included">Mobile Charger is included with Model X Launch Series purchases</div>
+                            <a href="#" class="learn-more">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <div class="accessories-section">
+                        <h2 class="section-title">Accessories</h2>
+                        
+                        <div class="accessories-list">
+                            <div class="accessory-option" onclick="toggleAccessory(this)">
+                                <div class="accessory-checkbox"></div>
+                                <div class="accessory-info">
+                                    <div class="accessory-name">Center Console Trays</div>
+                                    <div class="accessory-price">$35</div>
+                                </div>
+                            </div>
+                            
+                            <div class="accessory-option" onclick="toggleAccessory(this)">
+                                <div class="accessory-checkbox"></div>
+                                <div class="accessory-info">
+                                    <div class="accessory-name">All-Weather Interior Liners</div>
+                                    <div class="accessory-price">$240</div>
+                                </div>
+                            </div>
+                            
+                            <div class="accessory-option" onclick="toggleAccessory(this)">
+                                <div class="accessory-checkbox"></div>
+                                <div class="accessory-info">
+                                    <div class="accessory-name">Roof Rack</div>
+                                    <div class="accessory-price">$500</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="learn-more">Learn More →</a>
+                    </div>
+
+                    
+                    <h1>Enter Delivery ZIP</h1>
+                    <input type="text" class="input-field" placeholder="Enter Delivery ZIP">
+                    
+                    <div class="details-toggle">
+                        <span>Show Pricing Details</span>
+                        <span>▼</span>
+                    </div>
+                    
+                    <div class="price-details">
+                        <div class="total-price">
+                            <span>Est. Purchase Price</span>
+                            <span>$61,630</span>
+                        </div>
+                        <div class="price-breakdown">
+                            <span>After Federal Tax Credit if eligible</span>
+                            <span>$54,130</span>
+                        </div>
+                        <div class="price-breakdown">
+                            <span>Includes Destination and Order Fee</span>
+                            <span></span>
+                        </div>
+                    </div>
+                    
+                    <div class="price-details">
+                        <div class="total-price">
+                            <span>Due Today</span>
+                            <span>$250</span>
+                        </div>
+                        <div class="price-breakdown">
+                            <span>Non-refundable Order Fee</span>
+                            <span></span>
+                        </div>
+                    </div>
+                    
+                    <button class="cta-button"> <a href="./orderwithcardX/orderwith-card.html">Order with Card</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="ordernowX.js"></script>
+</body>
+</html>
